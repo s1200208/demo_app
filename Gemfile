@@ -15,8 +15,9 @@ gem 'sass-rails', '4.0.5'
 gem 'uglifier', '2.1.1'
 
 # Use CoffeeScript for .js.coffee assets and views
+group :assets do
 gem 'coffee-rails', '4.0.1'
-
+end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -50,3 +51,5 @@ group :production do
       gem 'pg', '0.15.1'
       gem 'rails_12factor', '0.0.2'
 end
+
+gem 'therubyracer'
